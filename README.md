@@ -1,2 +1,2 @@
-# apprici.github.io
+# apprici.it
 http://www.apprici.it
