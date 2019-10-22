@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/ea93105578.js" crossorigin="anonymous"></script>
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background-image: url('/jan-tinneberg-tVIv23vcuz4-unsplash.jpg');
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+
+    .bottomright {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /*background: rgba(255, 249, 192, 0.7);*/
+    }
+
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bgimg">
+    <div class="topleft">
+      <!-- <p><a href="http://app.apprici.it"><img src="apprici2-36.png"></a></p> -->
+      <p><a href="#"><img src="apprici2-36.png"></a></p>
+    </div>
+    <div class="middle">
+      <h1>prossimamente</h1>
+      <hr>
+      <p id="demo" style="font-size:30px">
+      </p>
+      <!-- <p>
+        Smart Access and Monitoring App for your Building.
+      </p> -->
+      <!-- <p>
+        <i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> <i class="far fa-building"></i>
+      </p>       -->
+    </div>
+    <div class="bottomleft">
+      <p>
+        App per l'Accesso Smart alla tua Struttura ed il Monitoraggio dei tuoi Servizi.
+        <i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> <i class="far fa-building"></i>
+      </p>
+    </div>
+    <div class="bottomright">
+      <a href="http://www.aleven.it" target="_blank"><img src="aleven-a-250.png" height="36"></a>
+    </div>
+  </div>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 13, 2020 12:00:00").getTime();
+
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function () {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+
+</body>
