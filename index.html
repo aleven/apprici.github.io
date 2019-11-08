@@ -41,14 +41,14 @@
 
     .bottomleft {
       position: absolute;
-      bottom: 0;
+      bottom: 100px;
       left: 16px;
     }
 
     .bottomright {
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 100px;;
     }
 
     .middle {
@@ -74,30 +74,9 @@
       border-bottom-right-radius: 5px;
     }
   </style>
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-
-  <script type="text/javascript">
-    /*
-    $(document).ready(function () {
-
-      var bgArray = ['jan-tinneberg-tVIv23vcuz4-unsplash.jpg', 'pexels-photo-147634.jpeg', 'pexels-photo-792034.jpeg'];
-      var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-
-      $('.bgimg').css('background-image', 'url(\'' + bg + '\')');
-
-      // If you have defined a path for the images
-      var path = ''; // 'images/bg/';
-
-      // then you can put it right before the variable 'bg'
-      // $('body').css('background', path + bg);
-    });
-    */
-  </script>
 </head>
 
 <body>
-
   <div class="bgimg">
     <div class="topleft">
       <!-- <p><a href="http://app.apprici.it"><img src="apprici2-36.png"></a></p> -->
@@ -105,78 +84,33 @@
         <a href="#"><img src="apprici2-36.png" width=""></a>
       </p>
     </div>
+
     <div class="middle">
       <h1>Prossimamente</h1>
       <hr>
-      <p id="demo" style="font-size:30px">
-      </p>
-      <!-- <p>
-        Smart Access and Monitoring App for your Building.
-      </p> -->
-      <!-- <p>
-        <i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> <i class="far fa-building"></i>
-      </p>       -->
-<p>
-  
-</p>      
-  </div>
+      <p id="demo" style="font-size:30px"></p>
+    </div>
+
     <div class="bottomleft">
       <p>
         App per l'Accesso Smart alla tua Struttura ed il Monitoraggio dei tuoi Servizi.
         <i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> <i class="far fa-building"></i>
       </p>
-      <!--
-      <p>
-        <small>software pronto all'uso per la Gestione delle strutture in co-working o edifici pubblici a disposizione delle Associazioni: Controllo Accessi semplificato e registro elettronico, Monitoraggio delle Utenze, gestione delle prenotazioni e contabilità.</small>
-      </p>
-      -->
     </div>
     <div class="bottomright">
       <a href="http://www.aleven.it" target="_blank"><img src="aleven-a-250.png" height="36"></a>
     </div>
-  </div>
 
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"58a9b92a2c1ae12b26d05d79f","lid":"8bd45f00ef","uniqueMethods":true}) })</script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us15.list-manage.com", "uuid": "58a9b92a2c1ae12b26d05d79f", "lid": "8bd45f00ef", "uniqueMethods": true }) })</script>
 
-  <!-- <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 13, 2020 12:00:00").getTime();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74352854-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-    // Update the count down every 1 second
-    var countdownfunction = setInterval(function () {
-
-      // Get todays date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script> -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74352854-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-74352854-3');
-  </script>
-
+      gtag('config', 'UA-74352854-3');
+    </script>
 </body>
