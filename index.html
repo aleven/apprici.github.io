@@ -18,9 +18,10 @@
     html {
       height: 100%;
       margin: 0;
+      background-color: #eaecdc;
     }
 
-    .bgimg {
+    .bgimgPAUSE {
       /* background-image: url('jan-tinneberg-tVIv23vcuz4-unsplash.jpg'); */
       background-image: url('pexels-photo-147634.jpeg');
       height: 100%;
@@ -73,10 +74,24 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
+
+    /* Style the video: 100% width and height to cover the entire window */
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
   </style>
 </head>
 
 <body>
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="door-nfc-crop.mp4" type="video/mp4">
+  </video>
+
   <div class="bgimg">
     <div class="topleft">
       <!-- <p><a href="http://app.apprici.it"><img src="apprici2-36.png"></a></p> -->
@@ -85,11 +100,11 @@
       </p>
     </div>
 
-    <div class="middle">
+    <!-- <div class="middle">
       <h1>Prossimamente</h1>
       <hr>
       <p id="demo" style="font-size:30px"></p>
-    </div>
+    </div> -->
 
     <div class="bottomleft">
       <p>
